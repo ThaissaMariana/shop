@@ -1,26 +1,22 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
+import styles from './main.module.css';
 
-export default function Main() {
-    const [produtos, setProdutos] = useState([]);
-
-    useEffect(() => {
-        fetch("https://api.escuelajs.co/api/v1/products")
-            .then(response => response.json())
-            .then(data => setProdutos(data));
-    }, []);
-
+export default async function Main() {
+    const response = await fetch("https://api.escuelajs.co/api/v1/products");
+    const produtos = await response.json();
+    
     return(
-        <main className={StyleSheet.main}>
+        <main className={styles.main}>
             <h2>Produtos</h2>
             {produtos.map((produto) => (
-                <div key={produto.id} className={StyleSheet.produto}>
+                <div className={styles.produto} key={produto.id} >
                     <h3>{produto.title}</h3>
                     <p>Price: ${produto.price}</p>
                     <p>{produto.description}</p>
                     <p>Category: {produto.category.name}</p>
                     <div className={styles.images}>
                         {produto.images.slice(0, 3).map((image, index) => (
-                            <img key={index} src={image} alt={produto.title} className={styles.image}/>
+                            <img className={styles.image} key={index} src={image} alt={produto.title} />
                         ))}
                     </div>
                 </div>
