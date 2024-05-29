@@ -1,0 +1,12 @@
+.produto{
+    background-color: #464647;
+    
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    padding: 5px;
+    margin: 20px;
+    overflow: hidden;
+    text-align: center;
+    font-family:'Paprika', sans-serif;
+  }
