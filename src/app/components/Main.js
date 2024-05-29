@@ -1,8 +1,8 @@
-import React from "react";
+ import React from "react";
 import styles from './main.module.css';
 
 export default async function Main() {
-    const response = await fetch("https://api.escuelajs.co/api/v1/products");
+    const response = await fetch("https://fakestoreapi.com/products");
     const produtos = await response.json();
     
     return(
@@ -13,14 +13,10 @@ export default async function Main() {
                     <h3>{produto.title}</h3>
                     <p>Price: ${produto.price}</p>
                     <p>{produto.description}</p>
-                    <p>Category: {produto.category.name}</p>
-                    <div className={styles.images}>
-                        {produto.images.slice(0, 3).map((image, index) => (
-                            <img className={styles.image} key={index} src={image} alt={produto.title} />
-                        ))}
-                    </div>
+                    <p>Category: {produto.category}</p>
+                    <p>Avaliação: {produto.rating.count}</p>
                 </div>
             ))}
         </main>
     );
-}
+} 

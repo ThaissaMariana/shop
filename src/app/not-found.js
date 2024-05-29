@@ -1,7 +1,6 @@
-import Link from 'next/link'
 import styles from './components/not-found.module.css'
 import './components/footer.module.css';
-import './components/menu.module.css';
+
 
 export default function NotFound() {
     return (
