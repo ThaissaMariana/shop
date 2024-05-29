@@ -3,7 +3,7 @@ const nextConfig = {
     images:{
         domains:[
             "fakestoreapi.com",
-            "i.pinimg.com"
+            "pngfre.com"
         ]
     }
 };

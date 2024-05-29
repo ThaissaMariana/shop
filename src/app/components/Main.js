@@ -1,5 +1,6 @@
- import React from "react";
+import React from "react";
 import styles from './main.module.css';
+import Image from "next/image";
 
 export default async function Main() {
     const response = await fetch("https://fakestoreapi.com/products");
@@ -15,6 +16,10 @@ export default async function Main() {
                     <p>{produto.description}</p>
                     <p>Category: {produto.category}</p>
                     <p>Avaliação: {produto.rating.count}</p>
+                    <Image
+                    width={80}
+                    height={80}
+                    src={produto.image} />
                 </div>
             ))}
         </main>
