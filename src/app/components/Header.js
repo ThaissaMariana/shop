@@ -12,7 +12,7 @@ export default function Header() {
                 height={80}
                 src={"https://pngfre.com/wp-content/uploads/hello-kitty-poster.png"} />
         </div>
-        
+        <div></div>
         </header>
     );
 }

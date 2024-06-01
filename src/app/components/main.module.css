@@ -1,12 +1,32 @@
-.produto{
+.main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  background-color: #ffd4d0;
+  font-family:'Roboto', sans-serif;
+  min-height: 100vh;
+}
+.card{
     background-color: #464647;
-    
-    display: inline-block;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 400px;
     height: 400px;
     padding: 5px;
     margin: 20px;
     overflow: hidden;
     text-align: center;
-    font-family:'Paprika', sans-serif;
+   
   }
+
+  .h2{
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+

@@ -8,17 +8,17 @@ export default async function Main() {
     
     return(
         <main className={styles.main}>
-            <h2>Produtos</h2>
+            <h2 className={styles.h2}>Produtos</h2>
             {produtos.map((produto) => (
-                <div className={styles.produto} key={produto.id} >
+                <div className={styles.card} key={produto.id} >
                     <h3>{produto.title}</h3>
                     <p>Price: ${produto.price}</p>
                     <p>{produto.description}</p>
                     <p>Category: {produto.category}</p>
-                    <p>Avaliação: {produto.rating.count}</p>
+                    <p>Rating: {produto.rating.count}</p>
                     <Image
-                    width={80}
-                    height={80}
+                    width={100}
+                    height={100}
                     src={produto.image} />
                 </div>
             ))}
