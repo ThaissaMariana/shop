@@ -1,5 +1,32 @@
 .footer {
-    background-color: beige;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fffdfd;;
     padding: 20px;
     text-align: center;
+    color: #A90623;
+    font-family:'Paprika', sans-serif;
+    height:30;
+    
 }
+
+.logo{
+    margin-top: 18px;
+    margin-left: auto;
+  }
+
+
+  .redes{
+    list-style: none;
+    padding: 0;
+    gap: 5px;
+    display: flex;
+  }
+
+  .redes a{
+    display: inline;
+    margin-right: 5px;
+    color: #A90623;
+    text-decoration: none;
+  }
