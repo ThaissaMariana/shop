@@ -1,0 +1,25 @@
+.card{
+    background-color: #464647;
+    
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    padding: 5px;
+    margin: 20px;
+    overflow: hidden;
+    text-align: center;
+    font-family:'Paprika', sans-serif;
+  }
+
+  .imagem{
+    height: 200px;
+    width: 400px;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+
+.centro{
+  display: flex;
+  justify-content: center;
+}

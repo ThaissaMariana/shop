@@ -4,19 +4,20 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 30px;
   background-color: #ffd4d0;
   font-family:'Roboto', sans-serif;
+  color: #A90623;
   min-height: 100vh;
 }
 .card{
-    background-color: #464647;
+    background-color: #ffffff;
     border-radius: 24px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 400px;
-    height: 400px;
+    width: 550px;
+    height: 560px;
     padding: 5px;
     margin: 20px;
     overflow: hidden;
@@ -28,5 +29,10 @@
     text-align: center;
     margin-bottom: 20px;
     width: 100%;
+    text-shadow: 2px 2px 3px #ffffff;
+    color: #A90623;
+    font-family:'Paprika', sans-serif;
+    margin-top: 40px;
+    font-size: 29px;
   }
 
