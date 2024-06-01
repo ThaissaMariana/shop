@@ -5,14 +5,17 @@ import Image from "next/image";
 export default function Header() {
     return (
         <header className={styles.header}>
-        <h1>Loja</h1>
         <div>
-        <Image
-                width={80}
+        <Image className={styles.logo}
+                width={100}
                 height={80}
-                src={"https://pngfre.com/wp-content/uploads/hello-kitty-poster.png"} />
+                src={"https://i.pinimg.com/originals/6e/6d/88/6e6d881c989837d9c959886b88588357.png"} />
         </div>
-        <div></div>
+        <h1 className={styles.name}>Loja</h1>
+        <div className={styles.todes}>
+            <button className={styles.button}>+</button>
+        </div>
+        <p className={styles.frase}>Encontre tudo o que você precisa em um só lugar! Qualidade, variedade e preços incríveis te esperam. Venha conferir!</p>
         </header>
     );
 }
