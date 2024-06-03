@@ -2,13 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fffdfd;;
+    background-color: #EF95B2;
     padding: 20px;
     text-align: center;
-    color: #A90623;
+    color: #FFFFFF;
     font-family:'Paprika', sans-serif;
     height:30;
-    
+    text-shadow: 2px 2px 3px #A90623;
 }
 
 .logo{
@@ -27,6 +27,6 @@
   .redes a{
     display: inline;
     margin-right: 5px;
-    color: #A90623;
+    color: #FFFFFF;
     text-decoration: none;
   }
