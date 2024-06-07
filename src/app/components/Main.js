@@ -15,7 +15,7 @@ export default async function Main() {
                     <p>Price: ${produto.price}</p>
                     <p>{produto.description}</p>
                     <p>Category: {produto.category}</p>
-                    <p>Rating: {produto.rating.count}</p>
+                    <p> {produto.rating.count}</p>
                     <Image
                     width={100}
                     height={100}
