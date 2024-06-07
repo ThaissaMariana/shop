@@ -36,3 +36,16 @@
     font-size: 29px;
   }
 
+  .button{
+    color: whitesmoke;
+    background-color: #A90623;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    cursor: pointer;
+    padding: 5px 9px;
+    border: 2px;
+    border-radius: 5px;
+    align-self: center;
+    margin-right: 4px;
+  }
+
