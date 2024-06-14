@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import styles from './main.module.css';
 import Image from "next/image";
+import Spinner from "./Spinner";
 
 export default function Main() {
     const [listProduct, setListProduct] = useState([]);
@@ -45,9 +46,14 @@ export default function Main() {
     newList = newList.reverse();
     setListProduct(newList);
    }
+
+   if(listProduct[0] == null){
+    return <Spinner/>
+   }
+
     return(
         <>
-        <div>
+        <div className={styles.fundo}>
             <button className={styles.button} onClick={orderAz}>AZ</button>
             <button className={styles.button} onClick={orderZa}>ZA</button>
             <button className={styles.button} onClick={ordermais}>Menor Preço</button>
