@@ -42,12 +42,24 @@
     font-family: 'Roboto', sans-serif;
     border: none;
     cursor: pointer;
-    padding: 5px 9px;
+    padding: 3px 7px;
     border: 2px;
-    border-radius: 5px;
+    border-radius: 3px;
     align-self: center;
     margin-top: 10px;
     margin-left: 9px;
+  }
+
+  .buttonn{
+    color: whitesmoke;
+    background-color: #A90623;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    cursor: pointer;
+    padding: 3px 7px;
+    border: 2px;
+    border-radius: 3px;
+    align-self: center;
   }
 
   .fundo{
