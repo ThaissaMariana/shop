@@ -3,19 +3,25 @@ import { useEffect, useState } from "react";
 import styles from './main.module.css';
 import Image from "next/image";
 import Spinner from "./Spinner";
+import ErrorGetData from "./ErrorGetData";
 
 export default function Main() {
     const [listProduct, setListProduct] = useState([]);
     const [listComplete, setListComplete] = useState ([]);
     const [search, setSearch] = useState ("");
+    const [errorFetch, setErrorFetch] = useState(false);
 
-    useEffect( ()=> {
+    useEffect(()=> {
         const getProduct = async () =>{
+            try{
             const response = await fetch("https://fakestoreapi.com/products");
             const data = await response.json(); 
             setListProduct(data);
             setListComplete(data);
+        }catch{
+            setErrorFetch(true);
         }
+    }
         getProduct();
     }, []);
     
@@ -61,8 +67,14 @@ export default function Main() {
       setListProduct(newList);
    }
 
+   if(errorFetch == true){
+    return <ErrorGetData/>
+   }
+
    if(listProduct[0] == null){
-    return <Spinner/>
+    return (
+    <Spinner/>
+    )
    }
 
     return(
