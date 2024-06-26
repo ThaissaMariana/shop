@@ -4,6 +4,7 @@ import styles from './main.module.css';
 import Image from "next/image";
 import Spinner from "./Spinner";
 import ErrorGetData from "./ErrorGetData";
+import Link from "next/link";
 
 export default function Main() {
     const [listProduct, setListProduct] = useState([]);
@@ -103,6 +104,10 @@ export default function Main() {
                     width={100}
                     height={100}
                     src={produto.image} />
+
+                <Link href={`/product/${produto.id}`}>
+                  Ver produto
+                </Link>
                 </div>
             ))}
         </main>
